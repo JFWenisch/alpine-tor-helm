@@ -5,8 +5,6 @@ Helm chart running [alpine-tor-docker](https://github.com/JFWenisch/alpine-tor-d
   
 ## Add Repository
 
-Test deployment with
-
 ```
 helm repo add jfwenisch https://github.com/JFWenisch/alpine-tor-helm
 helm repo update
@@ -80,10 +78,16 @@ helm install alpine-tor-middle --set mode=middle --set samenodeport=true --set s
 
 ## Further information
 
-alpine-tor-docker https://github.com/JFWenisch/alpine-tor-docker
-Tor Project https://www.torproject.org/
-Alpine Linux https://alpinelinux.org/
-obfs4 - The obfourscator https://gitlab.com/yawning/obfs4
+[alpine-tor-docker](https://github.com/JFWenisch/alpine-tor-docker)
+
+[Tor Project](https://www.torproject.org/)
+
+[Alpine Linux ](https://alpinelinux.org/)
+
+[obfs4 - The obfourscator](https://gitlab.com/yawning/obfs4)
+ 
+
+ 
   
 
 

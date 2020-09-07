@@ -4,18 +4,32 @@ Helm chart running [alpine-tor-docker](https://github.com/JFWenisch/alpine-tor-d
 
   
 ## Add Repository
+The packaged chart is hosted via github pages and can be found under https://github.com/JFWenisch/charts/tree/master/alpine-tor. To add the chart repository run
 
 ```
-helm repo add jfwenisch https://github.com/JFWenisch/alpine-tor-helm
+helm repo add jfwenisch https://jfwenisch.github.io/charts
 helm repo update
+```
+
+Alternatively, you can manually fetch the chart
+```
+git clone https://github.com/JFWenisch/alpine-tor-helm.git
+cd alpine-tor-helm
 ```
 
 ## General usage
 
-Test deployment with
+Test deployment via helm repo
 
 ```
 helm install --dry-run --debug --generate-name jfwenisch/alpine-tor
+
+```
+
+If you pulled the repository and want to deploy it from src run the following command from within the alpine-tor-helm directory
+
+```
+helm install --dry-run --debug --generate-name .
 
 ```
 
